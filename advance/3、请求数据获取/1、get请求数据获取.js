@@ -3,6 +3,7 @@ const app=new Koa();
 
 app.use(async (ctx)=>{
     let url=ctx.url;
+    //从上下文的request中获取
     let request=ctx.request;
     let req_query=request.query;
     let req_querystring=request.querystring;
